@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>E-Commerce Store</title>
+</head>
+<body>
+
+<h1>My Online Store</h1>
+
+<table border="1">
+<tr>
+<th>Product</th>
+<th>Price</th>
+<th>Action</th>
+</tr>
+
+{% for product in products %}
+<tr>
+<td>{{ product.name }}</td>
+<td>₹{{ product.price }}</td>
+<td><button>Add to Cart</button></td>
+</tr>
+{% endfor %}
+
+</table>
+
+</body>
+</html>
